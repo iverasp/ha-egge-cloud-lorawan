@@ -1,0 +1,47 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Already configured. Only a single configuration possible.",
+      "no_lorawan_connections": "No LoRaWAN connection is available. Set up The Things Network first.",
+      "no_supported_devices": "No egge.cloud device was found. Set the device's version identifiers to brand `egge-cloud` and a supported model, such as `brisket-beacon`.",
+      "single_instance_allowed": "Already configured. Only a single configuration possible."
+    },
+    "step": {
+      "confirm": {
+        "description": "Set up egge.cloud devices from your LoRaWAN connections."
+      }
+    }
+  },
+  "entity": {
+    "event": {
+      "external_rapid_rise": {
+        "name": "External rapid rise",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "rapid_rise": "Rapid rise"
+            }
+          }
+        }
+      },
+      "internal_rapid_rise": {
+        "name": "Internal rapid rise",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "rapid_rise": "Rapid rise"
+            }
+          }
+        }
+      }
+    },
+    "sensor": {
+      "external_temperature": {
+        "name": "External temperature"
+      },
+      "internal_temperature": {
+        "name": "Internal temperature"
+      }
+    }
+  }
+}
